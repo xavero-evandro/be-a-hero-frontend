@@ -1,0 +1,16 @@
+{incidents.map(incident => (
+          <li key={incident.id}>
+            <strong>Incident</strong>
+            <p>{incident.title}</p>
+
+            <strong>Description</strong>
+            <p>{incident.description}</p>
+
+            <strong>Vaue</strong>
+            <p>${incident.value}</p>
+
+            <button type="button">
+              <FiTrash2 size={20} color="a8a8b3" />
+            </button>
+          </li>
+        ))}
